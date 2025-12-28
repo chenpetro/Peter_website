@@ -1,111 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-$main-color: #FFFFFF;
-$text1-color: #0080B7;
+$main-color: #ffffff;
+$text1-color: #0080b7;
 $text-color: #000000;
+$footer-color: #016D8C8C;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 1920px;
-    font-weight: 500;
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
+body {
+  width: 1920px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
 }
 
 .header__block {
-    position: absolute;
-    top: 70px;
-    right: 70px;
-    display: flex;
-    width: 654px;
-    height: 29px;
-    justify-content: space-between;
-    align-items: center;
-    color: $main-color;
-    z-index: 2;
-    list-style: none;
-    font-weight: 600;
-    font-size: 24px;
-    cursor: url('/img/leaf.png'), auto;
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  display: flex;
+  width: 654px;
+  height: 29px;
+  justify-content: space-between;
+  align-items: center;
+  color: $main-color;
+  z-index: 2;
+  list-style: none;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: url("/img/leaf.png"), auto;
 
-        // &__about_me {
+  // &__about_me {
 
-        // }
-        // &__my_politic {
+  // }
+  // &__my_politic {
 
-        // }
-        // &__media {
+  // }
+  // &__media {
 
-        // }
-        // &__contacts {
+  // }
+  // &__contacts {
 
-        // }
+  // }
 }
 
-.main{
-    position: relative;
+.main {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  background: linear-gradient(
+    213.38deg,
+    rgba(0, 164, 227, 0.86) 5.39%,
+    rgba(125, 187, 0, 0.86) 99.09%
+  );
+  &__slogan{
     width: 100%;
     height: 1080px;
-    background: linear-gradient(213.38deg, rgba(0, 164, 227, 0.86) 5.39%, rgba(125, 187, 0, 0.86) 99.09%);
-    &__img{
-        position: absolute;
-        bottom: 0;
-        left: 65px;
-    }
-    &__logo{
-        position: absolute;
-        top: 5%;
-        left: 2%;
-        z-index: 2;
-    }
-    &__logo_blue_line{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    &__logo_green_line{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    &__logo_bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    &__name{
-        width: 660;
-        height: 141;
-        padding-left: 881px;
-        padding-top: 385px;
-        padding-bottom: 14px;
-        color: $main-color;
-        z-index: 2;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 600;
-        font-size: 96px;
-        vertical-align: middle;
-    }
-        &__btn{
-        border-radius: 36px;
-        background-color: $main-color;
-        width: 234px;
-        height: 59px;
-        color: $text1-color;
-        border-style: none;
-        margin-left: 881px;
-        font-weight: 600;
-        font-size: 24px;
-        cursor: url('/img/leaf.png'), auto;
-        position: relative;
-        z-index: 3; 
-    }
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+  }
+  &__logo {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 2;
+  }
+  &__logo_blue_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__logo_green_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__logo_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__name {
+    width: 660;
+    height: 141;
+    padding-left: 881px;
+    padding-top: 385px;
+    padding-bottom: 14px;
+    color: $main-color;
+    z-index: 2;
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    vertical-align: middle;
+  }
+  &__btn {
+    border-radius: 36px;
+    background-color: $main-color;
+    width: 234px;
+    height: 59px;
+    color: $text1-color;
+    border-style: none;
+    margin-left: 881px;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: url("/img/leaf.png"), auto;
+    position: relative;
+    z-index: 3;
+  }
+  &__text_section {
+    width: 100%;
+    height: 766px;
+  }
+  &__title {
+    width: 238px;
+    height: 58px;
+    margin: 95px 0 27px 60px;
+    font-weight: 600;
+    font-size: 48px;
+    vertical-align: middle;
+  }
+  &__desc{
+    width: 1675px;
+    height: 490px;
+    margin-left: 60px;
+    margin-bottom: 96px;
+    font-size: 24px;
+    line-height: 48px;
+    vertical-align: middle;
+  }
 }
 
+// .footer{
+//     width: 100%;
+//     height: 193px;
+//     background-color: $footer-color;
+// }
