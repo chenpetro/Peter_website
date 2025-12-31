@@ -7,20 +7,26 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   margin: 0 auto;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 24px;
   font-family: "Inter", sans-serif;
+  position: relative;
 }
 
 .header__block {
   position: absolute;
   top: 70px;
-  right: 70px;
+  right: 5%;
   display: flex;
   width: 654px;
   height: 29px;
@@ -36,19 +42,21 @@ body {
 
 .main {
   width: 100%;
-  min-height: 100vh;
-  padding-bottom: 200px;
 }
 .main__slogan {
   position: relative;
   width: 100%;
+  max-width: 1920px;
   height: 1080px;
   background: linear-gradient(213.38deg, rgba(0, 164, 227, 0.86) 5.39%, rgba(125, 187, 0, 0.86) 99.09%);
+  overflow: hidden;
 }
 .main__img {
   position: absolute;
   bottom: 0;
   left: 65px;
+  max-width: 90%;
+  height: auto;
 }
 .main__logo {
   position: absolute;
@@ -75,11 +83,7 @@ body {
   z-index: 1;
 }
 .main__name {
-  width: 660;
-  height: 141;
-  padding-left: 881px;
-  padding-top: 385px;
-  padding-bottom: 14px;
+  padding: 385px 14px 14px 881px;
   color: #ffffff;
   z-index: 2;
   font-family: "Heebo", sans-serif;
@@ -102,32 +106,35 @@ body {
   z-index: 3;
 }
 .main__text_section {
-  width: 100%;
+  width: 80%;
   padding-top: 95px;
-  margin-left: 60px;
+  padding-bottom: 10vh;
+  margin: 0 auto;
 }
 .main__title {
-  width: 238px;
+  width: 100%;
+  max-width: 1675px;
   height: 58px;
-  margin-left: 60px;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 48px;
   vertical-align: middle;
 }
 .main__desc {
-  width: 1675px;
-  height: 490px;
+  width: 100%;
+  max-width: 1675px;
+  height: auto;
   margin-top: 27px;
-  margin-left: 60px;
-  margin-bottom: 96px;
   font-size: 24px;
   line-height: 48px;
   vertical-align: middle;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .footer {
   width: 100%;
-  height: 193px;
+  height: auto;
   background-color: rgba(1, 109, 140, 0.5490196078);
   position: relative;
 }
@@ -139,22 +146,22 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding-top: 84px;
+  padding-top: 8vh;
 }
 .footer__icons__item__img {
   cursor: url("/img/leaf.png"), auto;
 }
 .footer__text {
-  width: 647px;
+  width: 90%;
+  max-width: 647px;
   height: auto;
   margin: 0 auto;
   margin-top: 20px;
+  padding-bottom: 4vh;
   font-size: 14px;
   text-align: center;
   font-weight: 600;
-  font-family: Inter;
   font-weight: 600;
-  font-style: Semi Bold;
   font-size: 14px;
   text-align: center;
   vertical-align: middle;
@@ -178,4 +185,83 @@ body {
   bottom: 0;
   right: 0;
   z-index: -1;
+  max-width: 50vw;
+  zoom: 1.2;
+}
+
+@media (max-width: 1600px) {
+  .main__img {
+    left: 4vw;
+    zoom: 90%;
+    height: auto;
+  }
+  .main__name {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__img {
+    left: 2vw;
+    zoom: 80%;
+    height: auto;
+  }
+  .main__name {
+    font-size: 54px;
+    margin-left: -15vw;
+  }
+  .main__btn {
+    width: 14vw;
+    height: 50px;
+    margin-left: 800px;
+    font-size: 22px;
+  }
+  .main__logo {
+    zoom: 68%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 2;
+  }
+  .main__logo_blue_line {
+    zoom: 68%;
+  }
+  .main__logo_green_line {
+    zoom: 68%;
+  }
+  .main__logo_bg {
+    zoom: 68%;
+  }
+  .main__slogan {
+    height: 78vh;
+  }
+}
+@media (max-width: 1024px) {
+  .main__img {
+    zoom: 60%;
+  }
+  .main__name {
+    font-size: 46px;
+    margin-left: -35vw;
+    margin-top: -5vh;
+  }
+  .main__btn {
+    width: 14vw;
+    height: 50px;
+    margin-left: 600px;
+  }
+  .main__logo {
+    zoom: 50%;
+  }
+  .main__logo_blue_line {
+    zoom: 50%;
+  }
+  .main__logo_green_line {
+    zoom: 50%;
+  }
+  .main__logo_bg {
+    zoom: 50%;
+  }
+  .main__slogan {
+    height: 60vh;
+  }
 }
