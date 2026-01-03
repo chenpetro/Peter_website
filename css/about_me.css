@@ -359,7 +359,8 @@ body {
 }
 @media (max-width: 480px) {
   .main__slogan {
-    background: linear-gradient(213.38deg, rgba(0, 164, 227, 0.86) 5.39%, rgba(125, 187, 0, 0.86) 99.09%);
+    height: 852px;
+    background: url("../img/about_me_bg_mobile.png") no-repeat center/cover;
   }
   .main__img {
     display: none;
@@ -435,7 +436,7 @@ body {
   }
   .footer__text {
     font-size: 10px;
-    margin: 0;
+    margin-top: 0;
     padding-bottom: 15px;
   }
   .ellipse_left {
@@ -455,7 +456,7 @@ body {
   .ellipse_mob_right {
     display: block;
     position: absolute;
-    bottom: 550px;
+    bottom: 850px;
     right: 0;
     z-index: -1;
     width: 190px;
@@ -524,9 +525,6 @@ body {
   color: #ffffff;
   font-size: 32px;
   font-weight: 600;
-  text-decoration: none;
-  cursor: url("/img/leaf.png"), auto;
-  transition: transform 0.2s ease;
 }
 .burger_menu__item a:hover {
   transform: scale(1.1);
