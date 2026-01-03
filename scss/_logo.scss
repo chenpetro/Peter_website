@@ -1,0 +1,62 @@
+.main {
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 25%;
+  }
+  &__logo_mobile {
+    display: none;
+  }
+}
+
+// Devices (≤120px)
+@media (max-width: 1200px) {
+  .main {
+    &__logo {
+      zoom: 68%;
+      position: absolute;
+      z-index: 2;
+    }
+    &__slogan {
+      height: 78vh;
+    }
+  }
+}
+
+// Tablet landscape & small laptop (≤1024px - iPad Pro, MacBook Air)
+@media (max-width: 1024px) {
+  .main {
+    &__logo {
+      zoom: 50%;
+    }
+  }
+}
+
+// Devices (≤650px)
+@media (max-width: 650px) {
+  .main {
+    &__logo {
+      zoom: 30%;
+    }
+  }
+}
+
+// Mobile devices (≤480px)
+@media (max-width: 480px) {
+  .main {
+    &__logo {
+      display: none;
+    }
+    &__logo_mobile {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      scale: 25%;
+      transform-origin: top left;
+    }
+  }
+}

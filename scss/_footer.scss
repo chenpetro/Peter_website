@@ -1,0 +1,54 @@
+.footer {
+  width: 100%;
+  background-color: $footer-color;
+  position: relative;
+  &__icons {
+    width: 125px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-top: 8vh;
+    &__item {
+      &__img {
+        cursor: url("/img/leaf.png"), auto;
+      }
+    }
+  }
+  &__text {
+    width: 90%;
+    max-width: 647px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 4vh;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration-style: solid;
+    color: $text-color;
+    &__link {
+      text-decoration: underline;
+      cursor: url("/img/leaf.png"), auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .footer {
+    &__icons {
+      padding-top: 31px;
+    }
+    &__text {
+      font-size: 10px;
+      margin-top: 0;
+      padding-bottom: 15px;
+    }
+  }
+}
