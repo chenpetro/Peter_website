@@ -44,6 +44,12 @@
     transform-origin: top left;
   }
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: url("../img/leaf.png"), auto;
+}
+
 .header__block {
   position: absolute;
   top: 70px;

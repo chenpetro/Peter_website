@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: url("../img/leaf.png"), auto;
+}
+
 .header__block {
   position: absolute;
   top: 70px;
@@ -247,7 +253,7 @@ body {
   width: 100%;
   height: 417px;
   z-index: 0;
-  background: linear-gradient(180deg, #006D8B 0%, rgba(133, 215, 239, 0) 100%);
+  background: linear-gradient(180deg, #006d8b 0%, rgba(133, 215, 239, 0) 100%);
 }
 
 .footer {
@@ -308,4 +314,49 @@ body {
   bottom: 0;
   right: 0;
   z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .politic__wrapper {
+    padding-right: 75px;
+  }
+  .politic__title {
+    padding-top: 250px;
+  }
+  .politic_img {
+    width: 60%;
+  }
+  .vision__wrapper {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .politic__title {
+    padding-top: 200px;
+  }
+  .politic_img {
+    width: 60%;
+  }
+  .vision__wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 480px) {
+  .politic__wrapper {
+    margin: 0 auto;
+    padding: 35px;
+    font-size: 20px;
+  }
+  .politic__title {
+    padding-top: 200px;
+  }
+  .politic_img {
+    width: 60%;
+  }
+  .vision {
+    padding-bottom: 300px;
+  }
+  .vision__wrapper {
+    font-size: 20px;
+  }
 }
