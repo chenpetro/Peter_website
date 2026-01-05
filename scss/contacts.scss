@@ -1,0 +1,143 @@
+@import "_variables";
+@import "_header";
+@import "_logo";
+@import "_footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  height: auto;
+  background-color: $second-pg-bg;
+}
+
+.linear_gradient {
+  position: absolute;
+  width: 100%;
+  height: 417px;
+  z-index: 0;
+  background: linear-gradient(180deg, #006d8b 0%, rgba(133, 215, 239, 0) 100%);
+}
+
+.footer {
+  background-color: hsl(188, 98%, 32%);
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 48px;
+  vertical-align: middle;
+  color: $text-color;
+  padding-top: 358px;
+  padding-left: 78px;
+  padding-bottom: 86px;
+}
+
+.contacts {
+  margin: 0 auto;
+  padding-bottom: 912px;
+  width: 95%;
+  height: auto;
+  &__wrapper {
+    background-color: white;
+    border-radius: 35px;
+    padding: 74px 167px 71px 75px;
+    margin-bottom: 128px;
+          
+  }
+  &__list__item {
+    margin-bottom: 20px;
+    &__text_link {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1400px) {
+  .contacts {
+      padding-bottom: 400px;
+      &_img {
+        width: 500px;
+      }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    &__wrapper {
+      padding-right: 75px;
+    }
+    &__title {
+      padding-top: 250px;
+    }
+    // &_img {
+    //   width: 460px;
+    // }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__wrapper {
+      font-size: 16px;
+      padding-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    &__wrapper {
+      margin: 0 auto;
+      padding: 35px;
+      font-size: 16px;
+    }
+    &__title {
+      padding-top: 150px;
+    }
+    &_img {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .contacts {
+    &__wrapper {
+      font-size: 12px;
+    }
+        &_img {
+      width: 330px;
+    }
+  }
+}
