@@ -1,0 +1,145 @@
+@import "_variables";
+@import "_header";
+@import "_logo";
+@import "_footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  height: auto;
+  background-color: $medien-pg-bg;
+  z-index: -2;
+}
+
+.linear_gradient {
+  position: absolute;
+  width: 100%;
+  height: 417px;
+  z-index: -1;
+  // background: linear-gradient(180deg, #006d8b 0%, rgba(133, 215, 239, 0) 100%);
+  background: linear-gradient(180deg, #547814 0%, rgba(139, 195, 41, 0) 100%);
+}
+
+.medien__title {
+  font-weight: 600;
+  font-size: 48px;
+  vertical-align: middle;
+  color: $main-color;
+  z-index: 20;
+  padding-top: 358px;
+  padding-left: 122px;
+  padding-bottom: 86px;
+}
+
+.medien {
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+&__img{
+  width: 520px;
+  padding-bottom: 360px;
+  margin-left: 120px;
+}
+  &__list__item {
+    &__title {
+      font-weight: 700;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.politic_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.footer {
+  background-color: #287452d0;
+}
+
+@media (max-width: 1200px) {
+  .medien {
+    &__title {
+      padding-top: 250px;
+    }
+    &__img {
+      width: 400px;
+        // margin-left: 34px;
+        margin-left: 2vw;
+    }
+  }
+}
+
+.politic_img {
+  width: 520px;
+}
+
+@media (max-width: 768px) {
+  .medien {
+    &__title {
+      padding-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    &__img {
+      width: 90vw;
+      margin: 0 auto;
+      padding-bottom: 500px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    padding-top: 300px;
+  }
+  .medien {
+    &__title {
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      font-size: 40px;
+      width: 360px;
+      text-align: end;
+    }
+    &__img {
+      width: 100%;
+      margin-top: -80px;
+      padding-bottom: 400px;
+    }
+  }
+  .politic_img {
+  width: 380px;
+}
+}
+
+
+

@@ -271,19 +271,9 @@ body {
   font-size: 96px;
   vertical-align: middle;
 }
-.main__btn {
-  border-radius: 36px;
-  background-color: #ffffff;
-  width: 234px;
-  height: 59px;
-  color: #0080b7;
-  border-style: none;
-  margin-left: 881px;
-  font-weight: 600;
-  font-size: 24px;
-  cursor: url("/img/leaf.png"), auto;
-  position: relative;
-  z-index: 3;
+.main__text {
+  color: #000000;
+  padding: 0 14px 14px 881px;
 }
 .main__text_section {
   width: 80%;
@@ -356,6 +346,9 @@ body {
     font-size: 54px;
     margin-left: -100px;
   }
+  .main__text {
+    margin-left: -100px;
+  }
   .main__btn {
     width: 14vw;
     height: 50px;
@@ -372,10 +365,9 @@ body {
     margin-left: -290px;
     margin-top: -140px;
   }
-  .main__btn {
-    width: 14vw;
-    height: 50px;
-    margin-left: 600px;
+  .main__text {
+    margin-left: -290px;
+    font-size: 20px;
   }
   .main__slogan {
     height: 700px;
@@ -388,12 +380,11 @@ body {
   .main__name {
     font-size: 34px;
     margin-left: -400px;
-    margin-top: -9vh;
+    margin-top: -250px;
   }
-  .main__btn {
-    height: 45px;
+  .main__text {
     font-size: 16px;
-    margin-left: 480px;
+    margin-left: -360px;
   }
   .main__slogan {
     height: 600px;
@@ -401,17 +392,16 @@ body {
 }
 @media (max-width: 1024px) and (max-width: 650px) {
   .main__img {
-    zoom: 40%;
+    zoom: 35%;
   }
   .main__name {
     font-size: 24px;
-    margin-left: -520px;
-    margin-top: -19vh;
+    margin-left: -780px;
+    margin-top: -300px;
   }
-  .main__btn {
+  .main__text {
+    margin-left: -520px;
     font-size: 14px;
-    margin-left: 360px;
-    height: 30px;
   }
   .main__slogan {
     height: 500px;
@@ -434,7 +424,7 @@ body {
   }
   .main__name {
     position: absolute;
-    top: 204px;
+    top: 100px;
     right: 26px;
     font-size: 40px;
     vertical-align: middle;
@@ -442,14 +432,15 @@ body {
     padding: 0;
     margin: 0;
   }
-  .main__btn {
-    font-size: 14px;
-    margin: 0;
+  .main__text {
     position: absolute;
-    top: 282px;
-    right: 26px;
-    height: 33px;
-    width: 135px;
+    top: 160px;
+    left: 50px;
+    font-size: 16px;
+    width: 80%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
   }
   .main__slogan {
     height: 852px;

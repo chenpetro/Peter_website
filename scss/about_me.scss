@@ -61,20 +61,25 @@ body {
     font-size: 96px;
     vertical-align: middle;
   }
-  &__btn {
-    border-radius: 36px;
-    background-color: $main-color;
-    width: 234px;
-    height: 59px;
-    color: $text1-color;
-    border-style: none;
-    margin-left: 881px;
-    font-weight: 600;
-    font-size: 24px;
-    cursor: url("/img/leaf.png"), auto;
-    position: relative;
-    z-index: 3;
-  }
+  // &__btn {
+  //   border-radius: 36px;
+  //   background-color: $main-color;
+  //   width: 234px;
+  //   height: 59px;
+  //   color: $text1-color;
+  //   border-style: none;
+  //   margin-left: 881px;
+  //   font-weight: 600;
+  //   font-size: 24px;
+  //   cursor: url("/img/leaf.png"), auto;
+  //   position: relative;
+  //   z-index: 3;
+  // }
+      &__text{
+      color: $text-color;
+      padding: 0 14px 14px 881px;
+      
+    }
   &__text_section {
     width: 80%;
     padding-top: 95px;
@@ -148,6 +153,10 @@ body {
       font-size: 54px;
       margin-left: -100px;
     }
+          &__text{
+      margin-left: -100px;
+      
+    }
     &__btn {
       width: 14vw;
       height: 50px;
@@ -167,11 +176,15 @@ body {
       margin-left: -290px;
       margin-top: -140px;
     }
-    &__btn {
-      width: 14vw;
-      height: 50px;
-      margin-left: 600px;
+    &__text{
+      margin-left: -290px;
+      font-size: 20px;
     }
+    // &__btn {
+    //   width: 14vw;
+    //   height: 50px;
+    //   margin-left: 600px;
+    // }
     &__slogan {
       height: 700px;
     }
@@ -185,13 +198,18 @@ body {
     &__name {
       font-size: 34px;
       margin-left: -400px;
-      margin-top: -9vh;
+      margin-top: -250px;
     }
-    &__btn {
-      height: 45px;
+    // &__btn {
+    //   height: 45px;
+    //   font-size: 16px;
+    //   margin-left: 480px;
+    // }
+    &__text{
       font-size: 16px;
-      margin-left: 480px;
+      margin-left: -360px;
     }
+
     &__slogan {
       height: 600px;
     }
@@ -201,18 +219,22 @@ body {
 @media (max-width: 650px) {
   .main {
     &__img {
-      zoom: 40%;
+      zoom: 35%;
     }
     &__name {
       font-size: 24px;
+      margin-left: -780px;
+      margin-top: -300px;
+    }
+    &__text{
       margin-left: -520px;
-      margin-top: -19vh;
-    }
-    &__btn {
       font-size: 14px;
-      margin-left: 360px;
-      height: 30px;
     }
+    // &__btn {
+    //   font-size: 14px;
+    //   margin-left: 360px;
+    //   height: 30px;
+    // }
     &__slogan {
       height: 500px;
     }
@@ -238,7 +260,7 @@ body {
     }
     &__name {
       position: absolute;
-      top: 204px;
+      top: 100px;
       right: 26px;
       font-size: 40px;
       vertical-align: middle;
@@ -246,15 +268,25 @@ body {
       padding: 0;
       margin: 0;
     }
-    &__btn {
-      font-size: 14px;
-      margin: 0;
+    &__text{
       position: absolute;
-      top: 282px;
-      right: 26px;
-      height: 33px;
-      width: 135px;
+      top: 160px;
+      left: 50px;
+      font-size: 16px;
+      width: 80%;
+      max-width: none;
+      padding: 0;
+      margin: 0;
     }
+    // &__btn {
+    //   font-size: 14px;
+    //   margin: 0;
+    //   position: absolute;
+    //   top: 282px;
+    //   right: 26px;
+    //   height: 33px;
+    //   width: 135px;
+    // }
     &__slogan {
       height: 852px;
     }
