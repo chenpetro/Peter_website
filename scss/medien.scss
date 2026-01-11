@@ -72,6 +72,7 @@ body {
 }
 
 .politic_img {
+
   position: absolute;
   bottom: 0;
   right: 0;
@@ -93,10 +94,9 @@ body {
         margin-left: 2vw;
     }
   }
-}
-
-.politic_img {
+  .politic_img {
   width: 520px;
+}
 }
 
 @media (max-width: 768px) {

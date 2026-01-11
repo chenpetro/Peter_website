@@ -301,11 +301,10 @@ body {
     width: 400px;
     margin-left: 2vw;
   }
+  .politic_img {
+    width: 520px;
+  }
 }
-.politic_img {
-  width: 520px;
-}
-
 @media (max-width: 768px) {
   .medien__title {
     padding-top: 150px;
