@@ -437,7 +437,7 @@ body {
     position: absolute;
     top: 160px;
     left: 50px;
-    font-size: 16px;
+    font-size: 18px;
     width: 80%;
     max-width: none;
     padding: 0;
@@ -453,7 +453,7 @@ body {
     margin-top: 0;
   }
   .main__desc__item {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
   }
   .main__text_section {

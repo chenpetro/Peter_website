@@ -273,21 +273,12 @@ body {
       position: absolute;
       top: 160px;
       left: 50px;
-      font-size: 16px;
+      font-size: 18px;
       width: 80%;
       max-width: none;
       padding: 0;
       margin: 0;
     }
-    // &__btn {
-    //   font-size: 14px;
-    //   margin: 0;
-    //   position: absolute;
-    //   top: 282px;
-    //   right: 26px;
-    //   height: 33px;
-    //   width: 135px;
-    // }
     &__slogan {
       height: 852px;
     }
@@ -297,7 +288,7 @@ body {
     &__desc {
       margin-top: 0;
       &__item {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 22px;
       }
     }
@@ -305,10 +296,6 @@ body {
       padding-top: 47px;
     }
   }
-  // .header__block {
-  //   display: none;
-  // }
-
   .ellipse {
     &_left {
       display: none;

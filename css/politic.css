@@ -352,6 +352,16 @@ body {
   }
 }
 @media (max-width: 480px) {
+  body {
+    z-index: -1;
+  }
+  .linear_gradient {
+    z-index: 0;
+    height: 300px;
+  }
+  .main__logo_mobile {
+    z-index: 1;
+  }
   .logo {
     padding-top: 300px;
   }
@@ -368,6 +378,12 @@ body {
     width: 360px;
     text-align: end;
   }
+  .politic__subtitle {
+    font-size: 18px;
+  }
+  .politic__list__item__text {
+    font-size: 18px;
+  }
   .politic_img {
     width: 60%;
   }
@@ -375,6 +391,6 @@ body {
     padding-bottom: 300px;
   }
   .vision__wrapper {
-    font-size: 20px;
+    font-size: 18px;
   }
 }

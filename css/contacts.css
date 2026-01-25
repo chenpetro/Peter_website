@@ -323,13 +323,23 @@ body {
   }
 }
 @media (max-width: 480px) {
+  body {
+    z-index: -1;
+  }
+  .linear_gradient {
+    z-index: 0;
+    height: 300px;
+  }
+  .main__logo_mobile {
+    z-index: 1;
+  }
   .logo {
     padding-top: 250px;
   }
   .contacts__wrapper {
     margin: 0 auto;
     padding: 35px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .contacts__title {
     position: absolute;
@@ -341,6 +351,9 @@ body {
   }
   .contacts_img {
     width: 400px;
+  }
+  .contacts__list__item:last-child .contacts__list__item__text_link {
+    word-break: break-all;
   }
 }
 @media (max-width: 390px) {
