@@ -73,7 +73,10 @@ body {
     margin-left: -26px;
     margin-bottom: 26px;
   }
-  &__list__item {
+  &__list
+  {
+    list-style: none;
+  &__item {
     margin-bottom: 20px;
     &__title {
       font-weight: 700;
@@ -81,7 +84,7 @@ body {
       margin-bottom: 10px;
     }
   }
-}
+}}
 
 .vision {
   margin: 0 auto;
@@ -89,7 +92,6 @@ body {
   padding-bottom: 496px;
   &__wrapper {
     width: 45%;
-
     margin-top: 100px;
     background-color: white;
     border-radius: 35px;
@@ -97,6 +99,9 @@ body {
     padding-top: 49px;
     padding-bottom: 39px;
     padding-right: 44px;
+  }
+  &__list{
+    list-style: none;
   }
 }
 

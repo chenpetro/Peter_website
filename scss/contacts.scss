@@ -31,7 +31,7 @@ body {
   position: relative;
   height: auto;
   background-color: $second-pg-bg;
-z-index: -2;
+  z-index: -2;
 }
 
 .linear_gradient {
@@ -68,10 +68,13 @@ z-index: -2;
     padding: 74px 167px 71px 75px;
     margin-bottom: 128px;
   }
-  &__list__item {
-    margin-bottom: 20px;
-    &__text_link {
-      text-decoration: underline;
+  &__list {
+    list-style: none;
+    &__item {
+      margin-bottom: 20px;
+      &__text_link {
+        text-decoration: underline;
+      }
     }
   }
 }

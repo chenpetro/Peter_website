@@ -283,6 +283,9 @@ body {
   padding: 74px 167px 71px 75px;
   margin-bottom: 128px;
 }
+.contacts__list {
+  list-style: none;
+}
 .contacts__list__item {
   margin-bottom: 20px;
 }

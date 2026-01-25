@@ -300,6 +300,7 @@ body {
   vertical-align: middle;
   padding-right: 20px;
   box-sizing: border-box;
+  list-style: none;
 }
 
 .ellipse_left {

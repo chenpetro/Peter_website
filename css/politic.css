@@ -288,6 +288,9 @@ body {
   margin-left: -26px;
   margin-bottom: 26px;
 }
+.politic__list {
+  list-style: none;
+}
 .politic__list__item {
   margin-bottom: 20px;
 }
@@ -311,6 +314,9 @@ body {
   padding-top: 49px;
   padding-bottom: 39px;
   padding-right: 44px;
+}
+.vision__list {
+  list-style: none;
 }
 
 .politic_img {
